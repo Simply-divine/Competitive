@@ -1,0 +1,57 @@
+#include<bits/stdc++.h>
+#define F first
+#define S second
+#define pb push_back
+#define mp make_pair
+#define REP(i,a,b) for(int i=a;i<=b;i++)
+#define sq(a) (a)*(a)
+
+using namespace std;
+
+typedef long long ll;
+typedef vector<int> vi;
+typedef pair<int,int> pi;
+
+int main()
+{
+	ios_base::sync_with_stdio(false);
+	cin.tie(0);
+	vector<int> v;
+	v.pb(1);
+	v.pb(2);
+	v.pb(3);
+//	cout<<" last element is "<<v.back()<<endl; 
+//	sort(v.begin(),v.end());
+	sort(v.rbegin(),v.rend());
+	for(auto a:v){
+		cout<<a<<"\n";
+	}
+	cout<<"\n\n";
+	unordered_set<int> s;
+	s.insert(5);
+	s.insert(2);
+	s.insert(3);
+	s.insert(4);
+	s.insert(3);
+	//cout<<s.count(3)<<endl;
+	//s.erase(s.find(3));
+	map<string,int> m;
+	m["monkey"] = 2;
+	m["bananas"] = 1;
+	cout<<m["monkey"]<<endl;//2
+	cout<<m["mokey"]<<endl;//0
+	if(m.count("monkey")){
+		//key exists;
+		cout<<"Key exists"<<endl;
+	}
+	//sort(m.begin(),m.end());
+	for(auto x:m){
+		cout<<x.first<<" "+x.second<<"\n";
+	}
+	for(auto x:s)
+		cout<<x<<endl;
+	return 0;
+}
+
+
+

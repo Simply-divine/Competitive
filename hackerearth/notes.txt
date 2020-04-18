@@ -1,0 +1,5 @@
+So I got beaten up in the code arena in a question which used sliding window.
+
+So I have decided to look into ammortized analysis again.
+
+

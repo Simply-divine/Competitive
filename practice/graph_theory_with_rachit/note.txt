@@ -1,0 +1,28 @@
+6 5
+1 2
+2 3
+3 1
+2 6
+4 5
+
+## 1---2---6  4--5
+		\ /
+		 3
+
+property:
+undirected graph
+1 to 2 <bidirectional>
+
+
+1-->2-->6[directed graph]
+from 1 to 6 : true
+
+
+2 forests:
+	[1 2 3 6] and [4 5]
+
+forest 1 has 1 cycle. trees donot have cycles and have only one forest.
+There is only one forest in a tree. N nodes and N-1 edges
+
+
+ Nodes and edges
